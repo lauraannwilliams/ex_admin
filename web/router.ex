@@ -7,7 +7,7 @@ defmodule ExAdmin.Router do
   ## Examples:
 
       defmodule MyProject.Router do
-        use MyProject.Web, :router
+        use MyProjectWeb, :router
         use ExAdmin.Router
         ...
         scope "/", MyProject do

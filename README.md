@@ -66,7 +66,7 @@ config/config.exs
 ```elixir
 config :ex_admin,
   repo: MyProject.Repo,
-  module: MyProject,    # MyProject.Web for phoenix >= 1.3.0-rc
+  module: MyProject,    # MyProjectWeb for phoenix >= 1.3.0-rc
   modules: [
     MyProject.ExAdmin.Dashboard,
   ]
@@ -90,7 +90,7 @@ Add the admin routes
 web/router.ex
 ```elixir
 defmodule MyProject.Router do
-  use MyProject.Web, :router
+  use MyProjectWeb, :router
   use ExAdmin.Router
   ...
   scope "/", MyProject do
